@@ -1,7 +1,6 @@
 public class Problema4 {
     //Determine la raiz real mas grande de f(x) = 0.95x^3 - 5.9x^2 + 10.9x - 6
     //con el metodo de Newton-Raphson (realiza 5 iteraciones, xi = 3.5)
-    //imprimiendo todas las iteraciones
     public static void main(String[] args) {
         double x0 = 3.5; // Valor inicial
         double x1 = 0; // Valor inicial de la raíz
@@ -19,15 +18,13 @@ public class Problema4 {
             // Impresión de los resultados de cada iteración
             System.out.println("Iteracion: " + iter + " Raiz: " + x1 + " Error: " + ea);
         }
-        // Impresión de que no hay más iteraciones por hacer
-        System.out.println("No hay más iteraciones por hacer, se ha alcanzado el error especificado.");
     }
     //Función f(x) = 0.95x^3 - 5.9x^2 + 10.9x - 6
     public static double f(double x){
-        return 0.95*Math.pow(x,3) - 5.9*Math.pow(x,2) + 10.9*x - 6;
+        return 0.95*Math.pow(x,3)-5.9*Math.pow(x,2)+10.9*x-6;
     }
     //Derivada de la función f(x), df(x) = 2.85x^2 - 11.8x + 10.9
     public static double df(double x){
-        return 2.85*Math.pow(x,2) - 11.8*x + 10.9;
+        return 2.85*Math.pow(x,2)-11.8*x+10.9;
     }
 }

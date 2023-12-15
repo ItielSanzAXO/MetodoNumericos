@@ -25,6 +25,6 @@ public class Problema2 {
     }
     //Derivada de la función f(x), df(x) = 5.5 - 8x + 1.5x^2
     public static double df(double x){
-        return 5.5 - 8*x + 1.5*Math.pow(x,2);
+        return 1.5*Math.pow(x,2)-8*x+5.5;
     }
 }

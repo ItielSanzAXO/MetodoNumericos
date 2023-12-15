@@ -26,9 +26,9 @@ public class Problema5 {
     public static double f(double x){
         return 8*Math.sin(x)*Math.exp(-x) - 1;
     }
-    //Derivada de la función f(x), df(x) = 8e^-x(cos(x) - sen(x))
+    //Derivada de la función f(x), df(x) = 8e^-x(cos(-x)) - 8e^-x(sen(x))
     public static double df(double x){
-        return 8*Math.exp(-x)*(Math.cos(x) - Math.sin(x));
+        return 8*Math.exp(-x)*(Math.cos(-x)) - 8*Math.exp(-x)*(Math.sin(x));
     }
 
 }
